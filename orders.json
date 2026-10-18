@@ -1,0 +1,27 @@
+[
+    {
+        "order_id": "QB-F85826B7",
+        "created_at": "2026-10-18T18:57:26-04:00",
+        "customer_name": "Alex Smith",
+        "contact_number": "555-123-4567",
+        "order_type": "Pickup",
+        "items": [
+            {
+                "item_id": 1,
+                "name": "Classic Burger",
+                "unit_price": "8.50",
+                "quantity": 2,
+                "subtotal": "17.00"
+            },
+            {
+                "item_id": 5,
+                "name": "French Fries",
+                "unit_price": "3.50",
+                "quantity": 1,
+                "subtotal": "3.50"
+            }
+        ],
+        "total": "20.50",
+        "status": "Submitted"
+    }
+]
