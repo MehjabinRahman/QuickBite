@@ -1,0 +1,70 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="entire">
+
+        <h1>dutch Anchor Menu</h1>
+
+        <button onclick="showCart()">🛒 View Cart</button>
+
+        <div class="menu">
+
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQOABc48SmzYWLxXE-TzUZ-Sg9GE91PTIrqDQ5L9Rn9-Q&s=10">
+            Cost: 70 +tx
+
+            <button onclick="addItem('Dish 1', 70)">
+                Place in cart
+            </button>
+
+        </div>
+
+        <div class="menu">
+
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRqp7WRFSnQwFLOhmxElDGmrjmq1uEFufKE1GCWmOoQXQ&s=10">
+            Cost: 11 +tx
+
+            <button onclick="addItem('Dish 2', 11)">
+                Place in cart
+            </button>
+
+        </div>
+
+        <div class="menu">
+
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSMNmCb_08SmUWbp5RxCAK5mFpuJLHerPmmcHVv1mrdLw&s=10">
+            Cost: 24 +tx
+
+            <button onclick="addItem('Dish 3', 24)">
+                Place in cart
+            </button>
+
+        </div>
+
+    </div>
+
+    <div id="cartWindow" class="modal">
+        <div class="modal-content">
+
+            <h2>Your Cart</h2>
+
+            <div id="cartItems"></div>
+
+            <h3>Total: $<span id="cartTotal">0.00</span></h3>
+            <label for="pickupTime">Pickup time:</label>
+            <input type="time" id="pickupTime" required>
+            <button onclick="sendOrder()">Send Order</button>
+            <button onclick="closeCart()">Close</button>
+
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
