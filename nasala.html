@@ -1,0 +1,52 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="entire">
+        <h1>Nasala Menu</h1>
+
+        <button onclick="showCart()">🛒 View Cart</button>
+
+        <div class="menu">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTr74LqLsu9A7fngxAqfqEODrRzr6mvYOzmcmmZFSzWiA&s=10">
+            <p>Dish 1 — Cost: $23.50 + tax</p>
+            <button onclick="addItem('Dish 1', 23.50)">
+                Place in cart
+            </button>
+        </div>
+
+        <div class="menu">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRI-vyOyZ7Tom36EIE6Cc4dcvYoSh86Ytxtaqj4vP02qA&s=10">
+            <p>Dish 2 — Cost: $10.50 + tax</p>
+            <button onclick="addItem('Dish 2', 10.50)">
+                Place in cart
+            </button>
+        </div>
+
+        <div class="menu">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTR8O5lmleE5z2hVw-UqmOM5AF8d--Fv55Kd1EQPS5-xg&s=10">
+            <p>Dish 3 — Cost: $12.50 + tax</p>
+            <button onclick="addItem('Dish 3', 12.50)">
+                Place in cart
+            </button>
+        </div>
+    </div>
+
+    <!-- Cart popup -->
+    <div id="cartWindow" class="modal">
+        <div class="modal-content">
+            <h2>Your Cart</h2>
+            <div id="cartItems"></div>
+            <h3>Total: $<span id="cartTotal">0.00</span></h3>
+            <button onclick="sendOrder()">Send Order</button>
+            <button onclick="closeCart()">Close</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

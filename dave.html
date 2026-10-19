@@ -1,0 +1,68 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="entire">
+
+        <h1>Dave Menu</h1>
+
+        <button onclick="showCart()">🛒 View Cart</button>
+
+        <div class="menu">
+
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQwkkv8u8d6JCgco7QURvzZniQJy9aZALliQeRG4AD95g&s=10">
+            Cost: 23.50 +tx
+
+            <button onclick="addItem('Dish 1', 23.50)">
+                Place in cart
+            </button>
+
+        </div>
+
+        <div class="menu">
+
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSPkpQh0_VAeEgQN9FLT9C3BcG-jslSLKZhhTiTDoqUAw&s=10">
+            Cost: 9.50 +tx
+
+            <button onclick="addItem('Dish 2', 9.50)">
+                Place in cart
+            </button>
+
+        </div>
+
+        <div class="menu">
+
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR0PZrerfxI6MKbbS09jsLjkVNCK70Ew7w_gzWEHwEUIw&s=10">
+            Cost: 12.50 +tx
+
+            <button onclick="addItem('Dish 3', 12.50)">
+                Place in cart
+            </button>
+
+        </div>
+
+    </div>
+
+    <div id="cartWindow" class="modal">
+        <div class="modal-content">
+
+            <h2>Your Cart</h2>
+
+            <div id="cartItems"></div>
+
+            <h3>Total: $<span id="cartTotal">0.00</span></h3>
+            <button onclick="sendOrder()">Send Order</button>
+            <button onclick="closeCart()">Close</button>
+
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
